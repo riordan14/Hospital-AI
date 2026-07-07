@@ -9,7 +9,7 @@ Original file is located at
 ### Library Installation
 """
 
-!pip install -q streamlit
+
 
 import streamlit as st
 import pandas as pd
