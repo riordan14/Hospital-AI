@@ -21,14 +21,14 @@ st.set_page_config(page_title="Smart Hospital", page_icon="💊", layout="center
 
 @st.cache_resource
 def load_mymodel():
-  with open('hospital_model.pkl', 'rb') as f:
+  with open('hospital_modell.pkl', 'rb') as f:
     bundle = pickle.load(f)
   return bundle
 
 bundle = load_mymodel()
 knn = bundle['model']
 scaler = bundle['scaler']
-le_department = bundle['dept_map']
+le_department = bundle['le_department']
 
 st.title("💊 Smart Hospital by Dr. Sidney")
 st.write("Enter the patient's symptom data below to get a recommendation for a specialist department")
