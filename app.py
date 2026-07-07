@@ -84,7 +84,7 @@ if st.button("🚀 Process Patient Triage", type="primary", use_container_width=
 
   new_patient = pd.DataFrame([{
       'age' : age, 'gender' : gender_encoded, 'fever':fever, 'cough':cough, 'headache':headache,
-      'chest_pain':chest_pain, 'stomach pain':stomach_pain, 'shortness_breath':shortness_breath,
+      'chest_pain':chest_pain, 'stomach_pain':stomach_pain, 'shortness_breath':shortness_breath,
       'nausea_vomit':nausea_vomit, 'dizziness':dizziness, 'skin_rash':skin_rash, 'temperature_level':temp_encoded,
       'heart_rate_level':hr_encoded, 'duration':duration_encoded, 'diabetes':diabetes, 'asthma':asthma,
       'hypertension':hypertension, 'heart_disease':heart_disease
