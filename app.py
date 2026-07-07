@@ -104,7 +104,7 @@ if st.button("🚀 Process Patient Triage", type="primary", use_container_width=
 
   with st.expander("🔍 View Probability Details for All Departments"):
     for i, name in enumerate(le_department.classes_):
-      socre = proba[i] * 100
+      score = proba[i] * 100
       st.write(f"**{name}**)")
       st.progress(int(score))
       st.write(f"{score:.1f}%")
