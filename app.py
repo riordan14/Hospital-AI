@@ -19,7 +19,7 @@ st.set_page_config(page_title="Smart Hospital Triage", page_icon="🏥", layout=
 
 @st.cache_resource 
 def load_mymodel():
-    with open('hospital_model.pkl', 'rb') as f:
+    with open('hospital_modell.pkl', 'rb') as f:
         bundle = pickle.load(f)
     return bundle
 
